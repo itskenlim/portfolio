@@ -78,7 +78,7 @@ export function ContactSection() {
             </p>
           </div>
 
-          <div data-scrub-reveal className="gsap-reveal mt-8">
+          <div className="mt-8">
             <div className="flex flex-wrap gap-3">
               {links.map((link) => {
                 const Icon = link.icon;
