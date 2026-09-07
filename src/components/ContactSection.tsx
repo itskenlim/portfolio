@@ -83,16 +83,17 @@ export function ContactSection() {
               {links.map((link) => {
                 const Icon = link.icon;
                 return (
-                  <Button
-                    key={link.label}
-                    href={link.href}
-                    variant={link.variant}
-                    external={link.external}
-                    className="inline-flex gap-2"
-                  >
-                    <Icon />
-                    {link.label}
-                  </Button>
+                  <div key={link.label} data-scrub-reveal className="gsap-reveal">
+                    <Button
+                      href={link.href}
+                      variant={link.variant}
+                      external={link.external}
+                      className="inline-flex gap-2"
+                    >
+                      <Icon />
+                      {link.label}
+                    </Button>
+                  </div>
                 );
               })}
             </div>
