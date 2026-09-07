@@ -64,6 +64,7 @@ function getMobileScrubBand(lastSection: boolean): ScrubBand {
 const SCRUB_MOBILE = {
   ...SCRUB_WEIGHTS,
   ...getMobileScrubBand(false),
+  exit: 1.14,
   y: 48,
   exitY: 72,
   exitOpacity: heroScrollReveal.exitOpacity,
