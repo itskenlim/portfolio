@@ -22,11 +22,11 @@
 
 - Create: `public/background/galaxy-nebula.webp`
 
-- [ ] **Step 1: Generate one wide decorative galaxy image**
+- [x] **Step 1: Generate one wide decorative galaxy image**
 
 Create a 16:9 dark-space image with a cyan and violet nebula sweeping diagonally across the outer frame, sparse stars, deep navy-black negative space behind central content, no text, planets, spacecraft, or logos. Export as WebP at 1920×1080.
 
-- [ ] **Step 2: Place the asset in the public background directory**
+- [x] **Step 2: Place the asset in the public background directory**
 
 Save the generated file exactly as `public/background/galaxy-nebula.webp` so it resolves as `/background/galaxy-nebula.webp` without runtime imports.
 
@@ -36,15 +36,15 @@ Save the generated file exactly as `public/background/galaxy-nebula.webp` so it 
 
 - Modify: `src/components/SiteBackground.tsx:6-8`
 
-- [ ] **Step 1: Add a decorative fixed image layer**
+- [x] **Step 1: Add a decorative fixed image layer**
 
 Render a `div` before `DottedSurface` with `aria-hidden`, fixed viewport coverage, `pointer-events-none`, a negative stacking level, and an inline `backgroundImage: "url('/background/galaxy-nebula.webp')"`. Use `bg-cover bg-center bg-no-repeat` and a low opacity so it is visible but does not overpower content.
 
-- [ ] **Step 2: Add the readability veil on the same layer**
+- [x] **Step 2: Add the readability veil on the same layer**
 
 Use a dark transparent gradient/overlay on the image layer to keep the middle of the viewport darker than the outer nebula. Keep the layer static: no transform, animation, scroll listener, or parallax behavior.
 
-- [ ] **Step 3: Preserve the existing space surface**
+- [x] **Step 3: Preserve the existing space surface**
 
 Keep `<DottedSurface onReady={markBackgroundReady} />` unchanged so the current star/asteroid scene and intro readiness signal continue to work.
 
