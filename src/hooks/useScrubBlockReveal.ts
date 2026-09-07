@@ -57,14 +57,13 @@ function getMobileScrubBand(lastSection: boolean): ScrubBand {
   }
 
   // Exit finishes a bit higher so the last fade isn't behind the bar
-  return { start, end: "clamp(top 12%)" };
+  return { start, end: "clamp(top 9%)" };
 }
 
 /** Mobile — lighter scrub; chrome-safe start so enter/exit aren't under the toolbar */
 const SCRUB_MOBILE = {
   ...SCRUB_WEIGHTS,
   ...getMobileScrubBand(false),
-  exit: 1.14,
   y: 48,
   exitY: 72,
   exitOpacity: heroScrollReveal.exitOpacity,
