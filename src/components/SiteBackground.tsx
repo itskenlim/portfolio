@@ -9,7 +9,7 @@ export function SiteBackground() {
     <>
       <div
         aria-hidden
-        className="pointer-events-none fixed top-0 right-0 left-0 -z-20 h-svh overflow-hidden bg-cover bg-center bg-no-repeat lg:inset-0 lg:h-auto"
+        className="pointer-events-none fixed top-0 right-0 left-0 -z-20 h-lvh min-h-svh overflow-hidden bg-cover bg-center bg-no-repeat lg:inset-0 lg:h-auto"
         style={{
           backgroundImage: "url('/background/galaxy-nebula.webp')",
         }}
