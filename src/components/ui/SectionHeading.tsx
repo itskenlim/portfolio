@@ -1,5 +1,4 @@
 import { cn } from "@/lib/utils";
-import { RollingSectionTitle } from "./RollingSectionTitle";
 import { AnimatedItem, AnimatedSection } from "./AnimatedSection";
 
 type SectionHeadingProps = {
@@ -40,7 +39,7 @@ export function SectionMegaHeading({
 }) {
   return (
     <h2 className={cn("section-mega", className)}>
-      <RollingSectionTitle title={title} />
+      <MegaTitleText title={title} />
     </h2>
   );
 }
